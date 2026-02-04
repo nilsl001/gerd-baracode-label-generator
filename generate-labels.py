@@ -46,7 +46,7 @@ with tempfile.TemporaryDirectory() as path:
 
     # Label Params
     # first asn
-    start_asn = 188
+    start_asn = int(sys.argv[1])
     asn = start_asn
 
     # Text Color
