@@ -120,8 +120,3 @@ with tempfile.TemporaryDirectory() as path:
 
     filename = "barcodes-" + str(start_asn) + "_" + str(asn-1) + ".pdf"
     pdf.output(filename,"F")
-
-    if sys.platform.startswith("linux"):
-        os.system("xdg-open " + filename)
-    else:
-        os.system("open " + filename)
